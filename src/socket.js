@@ -9,10 +9,4 @@ export const initSocket = async () => {
         transports: ['websocket'],
     };
     return io(process.env.REACT_APP_BACKEND_URL, options);
-    // return io(process.env.REACT_APP_BACKEND_URL, {
-    //     cors: {
-    //         origin: "http://localhost:5000",
-    //         credentials: true
-    //     }, transports: ['websocket']
-    // });
 };
